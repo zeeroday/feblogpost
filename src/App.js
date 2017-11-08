@@ -7,11 +7,11 @@ import {
 
 // Components
 
-import Header from './Assets/components/HeaderComponents/header.js';
-import Footer from './Assets/components/footerComponents/footer.js';
-import Home from './Assets/components/pages/home.js';
-import Articles from './Assets/components/pages/articles.js';
-import About from './Assets/components/pages/about.js';
+import Header from './Assets/Components/HeaderComponents/header.js';
+import Footer from './Assets/Components/footerComponents/footer.js';
+import Home from './Assets/Components/pages/home.js';
+import Articles from './Assets/Components/pages/articles.js';
+import About from './Assets/Components/pages/about.js';
 
 // includes
 import './Assets/css/default.min.css';
