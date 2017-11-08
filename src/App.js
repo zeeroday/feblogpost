@@ -7,14 +7,15 @@ import {
 
 // Components
 
-import Header from './Assets/Components/HeaderComponents/header.js';
-import Footer from './Assets/Components/footerComponents/footer.js';
-import Home from './Assets/Components/pages/home.js';
-import Articles from './Assets/Components/pages/articles.js';
-import About from './Assets/Components/pages/about.js';
+import Header from './assets/components/HeaderComponents/header.js';
+import Footer from './assets/components/footerComponents/footer.js';
+import Home from './assets/components/pages/home.js';
+import Articles from './assets/components/pages/articles.js';
+import About from './assets/components/pages/about.js';
+import SignUp from './assets/components/pages/signup.js';
 
 // includes
-import './Assets/css/default.min.css';
+import './assets/css/default.min.css';
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
           <Route exact path='/home' component={Home}/>
           <Route exact path='/articles' component={Articles}/>
           <Route exact path='/about' component={About}/>
+          <Route exact path='/signup' component={SignUp}/>
           <Footer/>
         </div>
       </Router>
