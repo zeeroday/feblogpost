@@ -18,6 +18,22 @@ bold 700,
 bold italic 700i
 */
 
+/*
+Mixins
+*/
+@mixin translateY($e) {
+  -webkit-transform: translateY($e);
+    -moz-transform: translateY($e);
+        transform: translateY($e);
+
+}
+
+@mixin transition($e) {
+  -webkit-transform:$e;
+    -moz-transform:$e;
+        transform:$e;
+
+}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -28,29 +44,16 @@ body {
 
 a {
   text-decoration: none;
-
+  @include transition(.4s ease-in-out);
   cursor: pointer;
-    }
 
+  &:hover{
+    color: $red;
+    @include transition(.4s ease-in-out);
 
+  }
+}
 
 .container-fluid {
   line-height: 24px;
-}
-/*
-Mixins
-*/
-
-@mixin translateY($e) {
-  -webkit-transform: translateY($e);
-    -moz-transform: translateY($e);
-        transform: translateY($e);
-
-}
-
-@mixin translateY($e) {
-  -webkit-transform:$e;
-    -moz-transform:$e;
-        transform:$e;
-
 }

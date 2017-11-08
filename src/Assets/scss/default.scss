@@ -30,14 +30,14 @@ header {
     ul li {
       list-style-type: none;
       display: inline-block;
-      margin-right: 10px;
+      margin-right: 20px;
 
       &.last {
         margin: 0;
       }
-
+      // target anchor text
       a {
-        font-size: 19px;
+        font-size: 20px;
         line-height: normal;
         color: $white;
       }
