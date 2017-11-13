@@ -7,15 +7,19 @@ class SignUp extends Component {
     return (
       <div className="container-fluid">
           <h1>
-            Home
+            Sign Up
           </h1>
 
           <p>
-          What is your username 
+          What is your username
           </p>
+          <input type="text" value="level up"/>
+
       </div >
+
     );
   }
 }
+
 
 export default SignUp;
