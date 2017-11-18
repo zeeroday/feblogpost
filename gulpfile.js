@@ -18,18 +18,18 @@ var changed = require('gulp-changed');
 // Compile CSS
 gulp.task('compile_scss', function() {
   // place code for your default task here
-    gulp.src('./src/Assets/scss/**/*.scss')
+    gulp.src('./src/assets/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(minifyCSS())
     .pipe(rename({ suffix: '.min'}))
-    .pipe(changed('./src/Assets/css'))
-    .pipe(gulp.dest('./src/Assets/css'));
+    .pipe(changed('./src/assets/css'))
+    .pipe(gulp.dest('./src/assets/css'));
 
 });
 
 // detect changes in SCSS
 gulp.task('watch_scss', function(){
-  gulp.watch('./src/Assets/scss/**/*.scss', ['compile_scss']);
+  gulp.watch('./src/assets/scss/**/*.scss', ['compile_scss']);
   // place code for your default task here
 });
 
